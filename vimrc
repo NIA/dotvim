@@ -23,6 +23,8 @@ autocmd BufReadPost *
 \ if line("'\"") > 0 && line("'\"") <= line("$") |
 \   exe "normal! g`\"" |
 \ endif
+" trim whitespaces
+autocmd BufWritePre * :%s/\s\+$//e
 
 colorscheme vividchalk
 set tabstop=2
@@ -31,10 +33,17 @@ set autoindent
 set expandtab
 set number
 set nowrap
-set winminheight=0 
+set winminheight=0
 set foldmethod=indent
 set foldlevelstart=99 " all folds are opened
 set guioptions-=T
+if has("gui_gtk2")
+  set guifont=Monospace\ 10,Andale\ Mono\ 10
+elseif has("gui_win32")
+  set guifont=Lucida_Console:h12
+else
+  set guifont=Monaco:h12 " will just be here for the future ;)
+end
 
 set tags+=~/.vim/systags
 

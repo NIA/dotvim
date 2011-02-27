@@ -1,3 +1,10 @@
+" Needed on some linux distros.
+" see http://blog.adamlowe.com/2009/12/vim-destroys-all-other-rails-editors.html
+filetype off
+
+call pathogen#helptags()
+call pathogen#runtime_append_all_bundles()
+
 set nocompatible
 set backspace=indent,eol,start
 set history=5000		" keep 5000 lines of command line history
@@ -17,6 +24,7 @@ autocmd BufReadPost *
 \   exe "normal! g`\"" |
 \ endif
 
+colorscheme vividchalk
 set tabstop=2
 set shiftwidth=2
 set autoindent

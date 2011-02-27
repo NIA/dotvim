@@ -47,13 +47,6 @@ end
 
 set tags+=~/.vim/systags
 
-let g:EnhCommentifyPretty = 'Yes'
-
-" IMPORTANT: grep will sometimes skip displaying the file name if you
-" search in a singe file. This will confuse Latex-Suite. Set your grep
-" program to always generate a file-name.
-set grepprg=grep\ -nH\ $*
-
 let NERDTreeIgnore=['\~$', '\.o$', '\.so$']
 
 nmap <C-h> <C-w>h

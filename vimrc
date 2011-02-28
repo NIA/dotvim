@@ -49,6 +49,8 @@ set tags+=~/.vim/systags
 
 let NERDTreeIgnore=['\~$', '\.o$', '\.so$']
 
+let g:NERDCustomDelimiters = { 'ledger': { 'left': ';' } }
+
 nmap <C-h> <C-w>h
 nmap <C-j> <C-w>j
 nmap <C-k> <C-w>k

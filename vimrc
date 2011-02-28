@@ -70,6 +70,9 @@ nnoremap k gk
 " disable beeping and flashing
 autocmd VimEnter * set vb t_vb=
 
+" no italic in comments
+highlight Comment gui=NONE
+
 map ё `
 map й q
 map ц w

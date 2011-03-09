@@ -2,6 +2,11 @@
 " see http://blog.adamlowe.com/2009/12/vim-destroys-all-other-rails-editors.html
 filetype off
 
+if has("win32") || has("win64")
+  language messages en
+  set langmenu=none
+endif
+
 call pathogen#helptags()
 call pathogen#runtime_append_all_bundles()
 
@@ -14,6 +19,7 @@ set incsearch		" do incremental searching
 set mouse=a
 syntax on
 set hlsearch
+set encoding=utf-8
 
 set fileencodings=utf-8,cp1251,koi8-r,cp866,ucs-bom
 

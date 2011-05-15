@@ -81,6 +81,9 @@ autocmd VimEnter * set vb t_vb=
 " no italic in comments
 highlight Comment gui=NONE
 
+command! TODO execute 'vimgrep /TODO\c/g '.expand('%') | copen
+command! Tododo execute 'vimgrep /todo/g '.expand('%') | copen
+
 map ё `
 map й q
 map ц w

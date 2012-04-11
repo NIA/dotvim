@@ -30,7 +30,7 @@ autocmd BufReadPost *
 \   exe "normal! g`\"" |
 \ endif
 " trim whitespaces
-autocmd BufWritePre * :%s/\s\+$//e
+"autocmd BufWritePre * :%s/\s\+$//e
 
 colorscheme vividchalk
 set tabstop=2
@@ -48,7 +48,7 @@ if has("gui_gtk2")
 elseif has("gui_win32")
   set guifont=Lucida_Console:h12
 else
-  set guifont=Monaco:h12 " will just be here for the future ;)
+  set guifont=Monaco:h14
 end
 
 set tags+=~/.vim/systags

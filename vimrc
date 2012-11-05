@@ -46,7 +46,7 @@ set guioptions-=T
 if has("gui_gtk2")
   set guifont=Monospace\ 10,Andale\ Mono\ 10
 elseif has("gui_win32")
-  set guifont=Lucida_Console:h12
+  set guifont=Lucida_Console:h13
 else
   set guifont=Monaco:h14
 end

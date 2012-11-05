@@ -52,3 +52,9 @@
 [submodule "bundle/vcscommand"]
 	path = bundle/vcscommand
 	url = git://repo.or.cz/vcscommand
+[submodule "bundle/autoclose"]
+	path = bundle/autoclose
+	url = git://github.com/Townk/vim-autoclose.git
+[submodule "bundle/vim-ragtag"]
+	path = bundle/vim-ragtag
+	url = git://github.com/tpope/vim-ragtag.git

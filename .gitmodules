@@ -58,3 +58,6 @@
 [submodule "bundle/vim-ragtag"]
 	path = bundle/vim-ragtag
 	url = git://github.com/tpope/vim-ragtag.git
+[submodule "bundle/scala"]
+	path = bundle/scala
+	url = git://github.com/rosstimson/scala-vim-support.git

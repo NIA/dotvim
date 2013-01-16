@@ -43,8 +43,8 @@ set winminheight=0
 set foldmethod=indent
 set foldlevelstart=99 " all folds are opened
 set guioptions-=T
-if has("gui_gtk2")
-  set guifont=Monospace\ 10,Andale\ Mono\ 10
+if has("gui_gtk2") || has("gui_gtk3")
+  set guifont=Monospace\ 14,Andale\ Mono\ 14
 elseif has("gui_win32")
   set guifont=Lucida_Console:h13
 else

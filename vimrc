@@ -66,6 +66,9 @@ nmap <C-l> <C-w>l
 nmap <C-n> <C-w>n
 nmap <C-u> <C-w>-
 
+" Avoid pasting when scrolling in normal mode
+nmap <MiddleMouse> <Nop>
+
 nmap <C-s> :syn sync fromstart<CR>
 
 vmap <C-Insert> "+y

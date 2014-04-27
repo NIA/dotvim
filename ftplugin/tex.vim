@@ -5,6 +5,7 @@ setlocal textwidth=100
 " all the figure labels. Very useful!
 setlocal iskeyword+=:
 setlocal iskeyword+=_
+setlocal iskeyword+=-
 
 " enable spellcheck
 setlocal spell spelllang=ru,en

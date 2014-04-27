@@ -67,3 +67,6 @@
 [submodule "bundle/javascript"]
 	path = bundle/javascript
 	url = git://github.com/jelera/vim-javascript-syntax.git
+[submodule "bundle/gundo"]
+	path = bundle/gundo
+	url = http://github.com/sjl/gundo.vim.git

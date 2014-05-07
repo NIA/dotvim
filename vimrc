@@ -91,7 +91,7 @@ highlight Comment gui=NONE
 " select last pasted (or edited) text: http://vim.wikia.com/wiki/Selecting_your_pasted_text
 nnoremap <expr> gp '`[' . strpart(getregtype(), 0, 1) . '`]'
 
-command! TODO execute 'vimgrep /TODO\c/g '.expand('%') | copen
+command! TODO execute 'vimgrep /TODO\c\|FIXME/g '.expand('%') | copen
 command! Tododo execute 'vimgrep /todo/g '.expand('%') | copen
 
 map ё `

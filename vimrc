@@ -5,6 +5,7 @@ filetype off
 if has("win32") || has("win64")
   language messages en
   set langmenu=none
+  set directory=.,$TEMP
 endif
 
 call pathogen#helptags()

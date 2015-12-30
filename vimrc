@@ -1,11 +1,13 @@
 " Needed on some linux distros.
 " see http://blog.adamlowe.com/2009/12/vim-destroys-all-other-rails-editors.html
 filetype off
+let $VIMHOME=$HOME.'/.vim'
 
 if has("win32") || has("win64")
   language messages en
   set langmenu=none
   set directory=.,$TEMP
+  let $VIMHOME=$HOME.'/vimfiles'
 endif
 
 call pathogen#helptags()
@@ -53,6 +55,11 @@ else
 end
 
 set tags+=~/.vim/systags
+
+set undofile              " Save undo's after file closes
+let &undodir=$VIMHOME.'/undo' " where to save undo histories
+set undolevels=1000       " How many undos
+set undoreload=10000      " number of lines to save for undo
 
 let NERDTreeIgnore=['\~$', '\.o$', '\.so$']
 

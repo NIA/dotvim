@@ -53,6 +53,11 @@ elseif has("gui_win32")
 else
   set guifont=Monaco:h14
 end
+if has("gui_running")
+  " GUI is running or is about to start.
+  " Maximize gvim window.
+  set lines=40 columns=120
+endif
 
 set tags+=~/.vim/systags
 
@@ -64,6 +69,9 @@ set undoreload=10000      " number of lines to save for undo
 let NERDTreeIgnore=['\~$', '\.o$', '\.so$']
 
 let g:NERDCustomDelimiters = { 'ledger': { 'left': ';' } }
+
+let g:startify_change_to_vcs_root = 1
+let g:startify_session_persistence = 1
 
 cabbr <expr> %% expand('%:h')
 

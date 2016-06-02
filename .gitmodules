@@ -76,3 +76,9 @@
 [submodule "bundle/vcard"]
 	path = bundle/vcard
 	url = https://github.com/vim-scripts/VCard-syntax.git
+[submodule "bundle/airline"]
+	path = bundle/airline
+	url = https://github.com/vim-airline/vim-airline.git
+[submodule "bundle/fugitive"]
+	path = bundle/fugitive
+	url = https://github.com/tpope/vim-fugitive.git

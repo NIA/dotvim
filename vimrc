@@ -10,8 +10,8 @@ if has("win32") || has("win64")
   let $VIMHOME=$HOME.'/vimfiles'
 endif
 
-call pathogen#helptags()
-call pathogen#runtime_append_all_bundles()
+execute pathogen#infect()
+execute pathogen#helptags()
 
 set nocompatible
 set backspace=indent,eol,start
@@ -47,9 +47,9 @@ set foldmethod=indent
 set foldlevelstart=99 " all folds are opened
 set guioptions-=T
 if has("gui_gtk2") || has("gui_gtk3")
-  set guifont=Monospace\ 14,Andale\ Mono\ 14
+  set guifont=Fira\ Code\ 14,Monospace\ 14,Andale\ Mono\ 14
 elseif has("gui_win32")
-  set guifont=Lucida_Console:h13
+  set guifont=Fira_Code:h14,Lucida_Console:h13
 else
   set guifont=Monaco:h14
 end
@@ -72,6 +72,11 @@ let g:NERDCustomDelimiters = { 'ledger': { 'left': ';' } }
 
 let g:startify_change_to_vcs_root = 1
 let g:startify_session_persistence = 1
+
+let g:airline_powerline_fonts = 1
+let g:airline#extensions#branch#enabled = 1
+
+set laststatus=2  " always show status line, even for 1 file (to enable Powerline)
 
 cabbr <expr> %% expand('%:h')
 
